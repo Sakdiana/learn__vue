@@ -1,13 +1,20 @@
-<script setup>
 
-</script>
 
 <template>
-  <h1>asdasdasd</h1>
-  <h2 class="text-red-500">asdaddassd</h2>
+  <h3>{{ info }}</h3>
+  <p>{{ someInfo }}</p>
+  <button type="button" @click="this.info='Some new'">Отправить</button>
 </template>
 
-<style scoped>
+<script>
+export default {
+  data() {
+    return {
+      info:'Title',
+      someInfo:"Anons of message"
+    };
+  },
+};
+</script>
 
-
-</style>
+<style scoped></style>
