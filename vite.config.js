@@ -1,5 +1,6 @@
 import { fileURLToPath, URL } from 'node:url'
 import tailwindcss from '@tailwindcss/vite'
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
@@ -11,6 +12,7 @@ export default defineConfig({
      tailwindcss(),
     vue(),
     vueDevTools(),
+   vueJsx(),
   ],
   resolve: {
     alias: {
